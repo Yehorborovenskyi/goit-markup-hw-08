@@ -1,0 +1,36 @@
+.clients-caption {
+  @extend %caption;
+}
+
+.clients-set {
+  @extend %flex-center;
+  gap: 30px;
+}
+
+.clients-set__icon {
+  @extend %flex-center;
+  width: 170px;
+  height: 92px;
+  fill: $gray-contact-color;
+  border-radius: 4px;
+  border: 1px solid $gray-contact-color;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: $blue-color;
+    border: 1px solid $blue-color;
+  }
+  &:focus,
+  &:hover .clients-set__link {
+    fill: $blue-color;
+  }
+
+  transition: fill 250ms $main-bezier, border 250ms $main-bezier;
+}
+
+.clients-set__link {
+  fill: $gray-contact-color;
+
+  transition: fill 250ms $main-bezier;
+}

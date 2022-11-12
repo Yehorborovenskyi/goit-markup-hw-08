@@ -1,0 +1,69 @@
+// Кнопка открытия модального окна
+
+.order__button {
+  @extend %button;
+  padding: 10px 32px;
+}
+
+// Кнопка закрытия модального окна
+
+.button-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
+  width: 30px;
+  height: 30px;
+  background: none;
+  border-radius: 50%;
+  border: transparent;
+  cursor: pointer;
+}
+
+.button-close__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: $black-color;
+
+  transition: fill 250ms $main-bezier;
+
+  &:hover,
+  &:focus {
+    fill: $blue-color;
+  }
+}
+
+// Кнопка подписаться
+
+.form-spam__button {
+  @extend %flex-center;
+  @extend %button;
+  margin-left: 12px;
+  padding: 10px 28px;
+}
+
+.form-spam__icon {
+  margin-left: 12px;
+  width: 24px;
+  height: 24px;
+  fill: $white-color;
+}
+
+// Кнопка отправить
+
+.modal-button {
+  @extend %flex-center;
+}
+
+.button-send {
+  @extend %button;
+  padding: 10px 52px;
+  transition: background-color 250ms $main-bezier;
+
+  &:hover,
+  &:focus {
+    background-color: $blue-btn-color;
+  }
+}

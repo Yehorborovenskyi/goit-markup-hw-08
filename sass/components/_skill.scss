@@ -1,0 +1,36 @@
+.main-skill {
+  display: flex;
+}
+
+.main-skill__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.main-skill__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background: $white-btn-filtr-color;
+  border-radius: 4px;
+}
+
+.main-skill__caption {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.main-skill__text {
+  color: $gray-main-color;
+
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
