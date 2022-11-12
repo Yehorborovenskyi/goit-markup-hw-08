@@ -1,5 +1,7 @@
 .main-skill {
-  display: flex;
+  @media screen and(min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .main-skill__item:not(:last-child) {

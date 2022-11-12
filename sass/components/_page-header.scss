@@ -1,8 +1,8 @@
 .page-header {
   border-bottom: 1px solid $border-header;
 }
-
-.header-flex {
+.nav-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }

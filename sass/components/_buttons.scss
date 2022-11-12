@@ -1,3 +1,14 @@
+// Кнопка отрытия меню
+.menu-button__open {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  @media screen and(min-width:768px) {
+    display: none;
+  }
+}
+
 // Кнопка открытия модального окна
 
 .order__button {

@@ -7,7 +7,9 @@
 }
 
 .team-card {
-  display: flex;
+  @media screen and(min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .team-card__item {
