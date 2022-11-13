@@ -1,5 +1,12 @@
 .box-communications {
   width: 231px;
+
+  @media screen and(max-width: 767px) {
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 }
 
 .contact-footer {

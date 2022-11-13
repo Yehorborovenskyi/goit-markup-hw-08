@@ -17,6 +17,13 @@
 
   width: 528px;
   max-height: 581px;
+  @media screen and(max-width: 1200px) {
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    min-height: 609px;
+  }
+
   height: 100%;
   overflow: auto;
 

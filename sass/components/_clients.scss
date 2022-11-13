@@ -1,24 +1,49 @@
 .clients-caption {
-  @extend %caption;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @media screen and(min-width: 768px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.2;
+  }
 }
 
 .clients-set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+
   @media screen and (min-width: 1200px) {
-    display: flex;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
   }
 }
 
 .clients-set__icon {
   @extend %flex-center;
-  width: 170px;
+
+  @media screen and(max-width:767px) {
+    flex-basis: calc((100% - 2 * 15px) / 2);
+  }
+
+  @media screen and(min-width: 768px) {
+    flex-basis: calc((100% - 4 * 15px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 10 * 15px) / 6);
+  }
   height: 92px;
   fill: $gray-contact-color;
   border-radius: 4px;
   border: 1px solid $gray-contact-color;
   cursor: pointer;
+  transition: fill 250ms $main-bezier, border 250ms $main-bezier;
 
   &:hover,
   &:focus {
@@ -29,8 +54,6 @@
   &:hover .clients-set__link {
     fill: $blue-color;
   }
-
-  transition: fill 250ms $main-bezier, border 250ms $main-bezier;
 }
 
 .clients-set__link {

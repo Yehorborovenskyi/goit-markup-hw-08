@@ -1,25 +1,41 @@
 .main-skill {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  @media screen and(min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   @media screen and(min-width: 1200px) {
-    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
 
-.main-skill__item:not(:last-child) {
-  margin-right: 30px;
+.main-skill__item {
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 15px) / 2);
+  }
 }
 
 .main-skill__icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background: $white-btn-filtr-color;
   border-radius: 4px;
+
+  @media screen and(min-width: 767px) {
+    flex-basis: calc((100% - 2 * 15px) / 2);
+  }
 }
 
 .main-skill__caption {
+  @media screen and(max-width: 767px) {
+    text-align: center;
+  }
   margin-bottom: 10px;
 
   font-weight: 700;

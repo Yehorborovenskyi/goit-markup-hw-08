@@ -1,9 +1,24 @@
 .team {
+  @media screen and(max-width: 767px) {
+    padding-top: 0;
+  }
   background: $white-btn-filtr-color;
 }
 
 .team-caption {
-  @extend %caption;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
 }
 
 .team-card {
@@ -16,9 +31,17 @@
   background-color: $white-color;
   box-shadow: $box-shadow-btn-modal;
   border-radius: 0px 0px 4px 4px;
+  @media screen and(max-width:767px) {
+    max-height: 622px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 

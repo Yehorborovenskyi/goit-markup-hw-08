@@ -1,5 +1,7 @@
 .page-header {
-  border-bottom: 1px solid $border-header;
+  @media screen and(min-width: 1200px) {
+    border-bottom: 1px solid $border-header;
+  }
 }
 .nav-header {
   display: flex;

@@ -1,8 +1,10 @@
 .filtr-set {
-  display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
-  align-items: center;
+  @media screen and(min-width: 768px) {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .filtr-set__item:not(:last-child) {
   margin-right: 8px;
