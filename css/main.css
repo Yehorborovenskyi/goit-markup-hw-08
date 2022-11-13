@@ -1289,6 +1289,7 @@ ul {
 }
 
 .form-spam__input {
+  width: 100%;
   height: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -1303,7 +1304,7 @@ ul {
 }
 @media screen and (max-width: 1199px) {
   .form-spam__input {
-    width: 450px;
+    max-width: 450px;
     margin-bottom: 20px;
   }
 }
