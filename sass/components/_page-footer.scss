@@ -5,6 +5,13 @@
 }
 
 .footer {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    gap: 60px;
+  }
   @media screen and(min-width: 1200px) {
     display: flex;
     align-items: baseline;
@@ -13,10 +20,10 @@
 }
 
 .box-spam {
-  @media screen and(max-width: 767px) {
+  @media screen and(max-width: 1199px) {
     text-align: center;
   }
-  @media screen and(min-width: 768px) {
+  @media screen and(min-width: 1200px) {
     margin-left: 93px;
   }
 }
@@ -39,11 +46,11 @@
 }
 
 .form-spam__input {
-  @media screen and(max-width: 767px) {
-    width: 100%;
+  @media screen and(max-width: 1199px) {
+    width: 450px;
     margin-bottom: 20px;
   }
-  @media screen and(min-width: 768px) {
+  @media screen and(min-width:1200px) {
     width: 358px;
   }
 

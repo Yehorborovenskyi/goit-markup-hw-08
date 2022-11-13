@@ -4,7 +4,7 @@
 @import './utils/base';
 @import './utils/placeholders';
 @import './utils/mixin';
-@import './utils/utils';
+
 @import './utils/fonts';
 
 @import './components/container';
@@ -36,3 +36,5 @@
 @import './components/buttons-filtr';
 
 @import './components/product-card';
+
+@import './utils/utils';

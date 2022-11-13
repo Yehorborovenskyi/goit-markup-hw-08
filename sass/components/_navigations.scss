@@ -5,9 +5,13 @@
 
 .site-nav {
   display: flex;
-  padding-left: 93px;
+
   @media screen and(max-width: 767px) {
     display: none;
+  }
+
+  @media screen and(min-width: 1200px) {
+    padding-left: 93px;
   }
 }
 

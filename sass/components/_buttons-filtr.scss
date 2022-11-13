@@ -1,13 +1,16 @@
 .filtr-set {
+  display: flex;
+  gap: 15px;
+  column-gap: 8px;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
   @media screen and(min-width: 768px) {
-    display: flex;
     margin-bottom: 50px;
     justify-content: center;
     align-items: center;
   }
-}
-.filtr-set__item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .filtr-set__button {

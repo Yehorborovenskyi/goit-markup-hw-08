@@ -1,22 +1,9 @@
 .order {
-  @media screen and(max-width: 767px) {
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
-
-  @media screen and (min-width: 768px) {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
-    min-height: 600px;
-  }
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 1600px;
   background-color: $bg-color;
-
   text-align: center;
-
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, $gradient-color, $gradient-color),
@@ -24,27 +11,27 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .order__caption {
-  @media screen and (max-width: 767px) {
-    font-size: 26px;
-    line-height: 1.6;
-    text-align: center;
-    letter-spacing: 0.06em;
-  }
-
-  @media screen and(min-width:768px) {
-    max-width: 696px;
-  }
-
+  max-width: 360px;
   margin: 0 auto 30px;
-
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6;
   color: $white-color;
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and(min-width:1200px) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.4;
+  }
 }

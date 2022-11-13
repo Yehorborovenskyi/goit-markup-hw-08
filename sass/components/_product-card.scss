@@ -1,16 +1,22 @@
 .product-card {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
-.product-card__item:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
+.product-card__item {
+  width: 100%;
+  @media screen and(max-width) {
+  }
 
-.product-card__item:not(:nth-child(n + 7)) {
-  margin-bottom: 30px;
-}
+  @media screen and(min-width: 768px) {
+    flex-basis: calc((100% - 2 * 15px) / 2);
+  }
 
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 4 * 15px) / 3);
+  }
+}
 .product-card__link {
   display: block;
 
