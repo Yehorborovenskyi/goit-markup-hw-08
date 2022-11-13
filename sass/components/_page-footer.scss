@@ -47,12 +47,13 @@
 
 .form-spam__input {
   width: 100%;
-  @media screen and(max-width: 1199px) {
-    max-width: 450px;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  @media screen and(min-width: 480px) {
+    width: 450px;
   }
   @media screen and(min-width:1200px) {
     width: 358px;
+    margin-bottom: 0;
   }
 
   height: 50px;
