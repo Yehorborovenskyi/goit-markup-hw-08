@@ -70,11 +70,9 @@
 
 // Кнопка отправить
 
-.modal-button {
-  @extend %flex-center;
-}
-
 .button-send {
+  display: block;
+  margin: 0 auto;
   @extend %button;
   padding: 10px 52px;
   transition: background-color 250ms $main-bezier;
