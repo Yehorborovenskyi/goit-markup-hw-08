@@ -1,20 +1,43 @@
 .order {
-  padding-top: 118px;
-  padding-bottom: 118px;
-  max-width: 1600px;
+  max-width: 797px;
+  min-width: 320px;
+  min-height: 400px;
+  margin: 0 auto;
+  padding: 118px 0;
   background-color: $bg-color;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, $gradient-color, $gradient-color),
-    url(../images/background.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-image: $hero-grad, url(/images/Header-480.jpg);
+  @media screen and(min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and(min-resolution: 2dppx) {
+    background-image: $hero-grad, url(/images/Header-480@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 1199px;
+    min-width: 768px;
+    background-image: $hero-grad, url(/images/Header-768.jpg);
+    @media screen and(min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and(min-resolution: 2dppx) {
+      background-image: $hero-grad, url(/images/Header-768@2x.jpg);
+    }
+  }
 
   @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    min-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: $hero-grad, url(/images/Header-1600.jpg);
+    @media screen and(min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and(min-resolution: 2dppx) {
+      background-image: $hero-grad, url(/images/Header-1600@2x.jpg);
+    }
   }
 }
 
