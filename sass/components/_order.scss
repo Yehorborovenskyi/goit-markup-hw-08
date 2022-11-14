@@ -9,21 +9,21 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: $hero-grad, url(/images/Header-480.jpg);
+  background-image: $hero-grad, url(../../images/Header-480.jpg);
   @media screen and(min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and(min-resolution: 2dppx) {
-    background-image: $hero-grad, url(/images/Header-480@2x.jpg);
+    background-image: $hero-grad, url(../../images/Header-480@2x.jpg);
   }
 
   @media screen and (min-width: 768px) {
     max-width: 1199px;
     min-width: 768px;
-    background-image: $hero-grad, url(/images/Header-768.jpg);
+    background-image: $hero-grad, url(../../images/Header-768.jpg);
     @media screen and(min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and(min-resolution: 2dppx) {
-      background-image: $hero-grad, url(/images/Header-768@2x.jpg);
+      background-image: $hero-grad, url(../../images/Header-768@2x.jpg);
     }
   }
 
@@ -32,11 +32,11 @@
     min-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: $hero-grad, url(/images/Header-1600.jpg);
+    background-image: $hero-grad, url(../../images/Header-1600.jpg);
     @media screen and(min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and(min-resolution: 2dppx) {
-      background-image: $hero-grad, url(/images/Header-1600@2x.jpg);
+      background-image: $hero-grad, url(../../images/Header-1600@2x.jpg);
     }
   }
 }
