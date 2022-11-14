@@ -1,6 +1,4 @@
 .order {
-  max-width: 797px;
-  min-width: 320px;
   min-height: 400px;
   margin: 0 auto;
   padding: 118px 0;
@@ -17,8 +15,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 1199px;
-    min-width: 768px;
     background-image: $hero-grad, url(../images/Header-768.jpg);
     @media screen and(min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
