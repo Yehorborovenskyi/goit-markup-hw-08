@@ -1,3 +1,11 @@
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+  height: 100vh;
+  padding: 40px 48px;
+}
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -6,8 +14,6 @@
   width: 100vw;
   height: 100vh;
   background-color: $white-color;
-  padding: 40px 48px;
-  overflow: auto;
 
   transition: transform 250ms;
 
@@ -28,10 +34,6 @@
       fill: $blue-color;
     }
   }
-}
-
-.mobile-pages {
-  margin-bottom: 306px;
 }
 
 .mobile-pages__item {

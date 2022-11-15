@@ -1,14 +1,12 @@
 .box-subscribe {
+  text-align: center;
   @media screen and(max-width: 767px) {
-    text-align: center;
     margin-bottom: 60px;
   }
 
-  @media screen and(min-width: 768px) {
-    text-align: center;
-  }
   @media screen and(min-width: 1200px) {
     margin-left: 70px;
+    text-align: start;
   }
 }
 
@@ -91,6 +89,7 @@
 .mobile-subscribe {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
   gap: 20px;
 }
