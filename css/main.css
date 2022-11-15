@@ -438,12 +438,6 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-@media screen and (max-width: 767px) {
-  .main-logo__link {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-}
 
 .main-logo__header {
   color: rgb(0, 0, 0);
@@ -904,6 +898,9 @@ ul {
   position: absolute;
   top: 10px;
   right: 15px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
   margin: 0;
   padding: 0;
   border: none;
@@ -1403,7 +1400,7 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 .contact-footer:first-child {
-  margin-top: 20px;
+  margin-top: 28px;
 }
 .contact-footer:last-child {
   margin-bottom: 0px;
@@ -1554,6 +1551,13 @@ ul {
   padding: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+  padding: 10px 0px;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-button__open:hover, .menu-button__open:focus {
+  fill: rgb(33, 150, 243);
 }
 @media screen and (min-width: 768px) {
   .menu-button__open {
