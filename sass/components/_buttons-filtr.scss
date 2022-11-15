@@ -1,7 +1,7 @@
 .filtr-set {
   display: flex;
-  gap: 15px;
-  column-gap: 8px;
+  gap: 15px 8px;
+
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
     margin-bottom: 40px;
@@ -14,9 +14,7 @@
 }
 
 .filtr-set__button {
-  display: inline-block;
   padding: 6px 22px;
-
   color: inherit;
   cursor: pointer;
   font-family: $main-fonts;

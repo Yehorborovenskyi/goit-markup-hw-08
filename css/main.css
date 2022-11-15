@@ -1624,10 +1624,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 15px;
-  -webkit-column-gap: 8px;
-     -moz-column-gap: 8px;
-          column-gap: 8px;
+  gap: 15px 8px;
 }
 @media screen and (max-width: 767px) {
   .filtr-set {
@@ -1649,7 +1646,6 @@ ul {
 }
 
 .filtr-set__button {
-  display: inline-block;
   padding: 6px 22px;
   color: inherit;
   cursor: pointer;
